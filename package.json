@@ -1,0 +1,76 @@
+{
+  "name": "davyjans-react-project2",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@azure/storage-blob": "^12.9.0",
+    "@mswjs/data": "^0.8.4",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "classnames": "^2.2.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.12.0",
+    "faker": "^4.1.0",
+    "http-proxy-middleware": "^2.0.5",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "materialize-css": "^1.0.0-rc.2",
+    "miragejs": "^0.1.35",
+    "mock-socket": "^9.0.3",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.34",
+    "msw": "^0.36.3",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-materialize": "^3.10.0",
+    "react-moment": "^1.1.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^5.0.1",
+    "seedrandom": "^3.0.5",
+    "txtgen": "^2.2.4"
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2",
+    "react-error-overlay": "^6.0.9"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  },
+  "description": "React project 2 - Davy Jans",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "project2"
+  ],
+  "author": "Davy Jans",
+  "license": "ISC"
+}
