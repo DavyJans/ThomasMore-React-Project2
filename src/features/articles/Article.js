@@ -5,12 +5,20 @@ import _ from "lodash";
 import { Row, Col, Card, Icon, CardTitle  } from 'react-materialize';
 import genericImage from '../../news-generic.jpg' // relative path to image 
 
-const Article = ({ article, details }) => {
+const Article = ({ article, details, showAll }) => {
     let link = ''
     if(details){
         link =  <Link key={article.id} to={`/articles/${article.id}`}>Meer...</Link>
     }else{
         link =  <Link key={article.id} to={`/`}>Terug...</Link>
+    }
+
+    let content = ''
+    if(showAll){
+        content =  article.content
+       
+    }else{
+        content =  _.truncate(article.content, {'length': 200, 'separator': / /, 'omission': ' ...'} )
     }
 
      return (
@@ -34,7 +42,7 @@ const Article = ({ article, details }) => {
                                 <h6>{article.subtitle}</h6>
                                 <br></br>
                                 <p>
-                                    { _.truncate(article.content, {'length': 200, 'separator': / /, 'omission': ' ...'} )}
+                                    {content}
                                 </p>
                                 <br></br>
                                         <Link key={article.id} className="btn-floating halfway-fab waves-effect waves-light red" to={`/edit/${article.id}`}>

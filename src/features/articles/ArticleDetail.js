@@ -16,7 +16,7 @@ const ArticleDetail = ({match}) => {
 
     return (
         <>
-              <Article key={article.id} article={article} details={false}/>
+              <Article key={article.id} article={article} details={false} showAll={true}/>
 
             
         </>

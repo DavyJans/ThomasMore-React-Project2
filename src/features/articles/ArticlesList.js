@@ -37,7 +37,7 @@ const ArticlesList = () => {
 
     const listArticles = slicedArticles.map(article => (
        
-            <Article key={article.id} article={article} details={true} />
+            <Article key={article.id} article={article} details={true} showAll={false}/>
           
     ))
 
