@@ -1,2 +1,2 @@
-# ThomasMore-React-Project2
+Davy.NU
 React Project 2 - Davy Jans
